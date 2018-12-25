@@ -10,9 +10,12 @@ class App extends Component {
     return (
       <Router basename="/react-auth-ui/">
         <div className="App">
-          <div className="App__Aside" />
+          <div className="App__Aside">
+            <div className="AsideHeading">Welcome to</div>
+            <div className="AsideHeading AsideHeadingBold">ZERO OPACITY</div>
+          </div>
           <div className="App__Form">
-            <div className="PageSwitcher">
+            {/* <div className="PageSwitcher">
               <NavLink
                 to="/sign-in"
                 activeClassName="PageSwitcher__Item--Active"
@@ -28,24 +31,24 @@ class App extends Component {
               >
                 my team
               </NavLink>
-            </div>
-
+            </div> */}
+            <div className="FormHeading">Select Type of</div>
+            <div className="FormHeading FormHeadingBold">REGISTRATION</div>
             <div className="FormTitle">
               <NavLink
                 to="/sign-in"
                 activeClassName="FormTitle__Link--Active"
                 className="FormTitle__Link"
               >
-                myself
-              </NavLink>{" "}
-              or{" "}
+                I am an Individual
+              </NavLink>
               <NavLink
                 exact
                 to="/"
                 activeClassName="FormTitle__Link--Active"
                 className="FormTitle__Link"
               >
-                my team
+                We are a team
               </NavLink>
             </div>
 
